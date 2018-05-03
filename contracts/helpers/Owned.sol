@@ -3,7 +3,7 @@ pragma solidity ^0.4.19;
 contract Owned {
   address public ownerAddr;
 
-  function Owned() internal {
+  constructor() internal {
     ownerAddr = msg.sender;
   }
 

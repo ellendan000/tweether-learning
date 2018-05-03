@@ -6,7 +6,7 @@ import "../../contracts/users/UserStorage.sol";
 contract TestUserStorage {
   UserStorage userStorage;
 
-  function TestUserStorage() public {
+  constructor() public {
     userStorage = new UserStorage();
     userStorage.setControllerAddr(this);
   }

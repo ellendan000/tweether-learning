@@ -6,7 +6,7 @@ import "../../contracts/tweets/TweetStorage.sol";
 contract TestTweetStorage {
   TweetStorage tweetStorage;
 
-  function TestTweetStorage() public {
+  constructor() public {
     // TweetStorage _storage = TweetStorage(DeployedAddresses.TweetStorage());
     tweetStorage = new TweetStorage();
     tweetStorage.setControllerAddr(this);
